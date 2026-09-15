@@ -5,6 +5,6 @@ export const business = {
   instagram: 'autosocorro_cafe',
   email: 'socorrocafe2026@gmail.com',
   googleMapsPublicUrl: 'https://share.google/y5Y83IK7vczR9gSJA',
-  googleMapsEmbedUrl: '',
+  googleMapsEmbedUrl: 'https://www.google.com/maps?q=Auto%20Socorro%20Caf%C3%A9&output=embed',
   address: '', city: '', state: ''
 };
