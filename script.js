@@ -1,0 +1,4 @@
+const header=document.querySelector('header'),menu=document.querySelector('.menu'),nav=document.querySelector('nav');
+addEventListener('scroll',()=>header.classList.toggle('scrolled',scrollY>30),{passive:true});menu.onclick=()=>nav.classList.toggle('open');document.querySelectorAll('nav a').forEach(a=>a.onclick=()=>nav.classList.remove('open'));
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('shown');observer.unobserve(e.target)}}),{threshold:.15});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+const dialog=document.querySelector('dialog'),modalImg=dialog.querySelector('img');document.querySelectorAll('.gallery button').forEach(b=>b.onclick=()=>{modalImg.src=b.querySelector('img').src;modalImg.alt=b.querySelector('img').alt;dialog.showModal()});dialog.querySelector('button').onclick=()=>dialog.close();dialog.onclick=e=>{if(e.target===dialog)dialog.close()};

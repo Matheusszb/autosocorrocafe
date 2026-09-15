@@ -1,0 +1,1 @@
+{"name":"auto-socorro-cafe","version":"1.0.0","private":true,"scripts":{"start":"npx --yes serve .","lint":"node --check script.js","build":"node --check script.js"}}
